@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ASCOM.Ardufocus.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DriverOneID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ASCOM.Ardufocus.Focuser.1</Value>
+    </Setting>
+    <Setting Name="DriverTwoID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ASCOM.Ardufocus.Focuser.2</Value>
+    </Setting>
+    <Setting Name="ControlForm_X" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="ControlForm_Y" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

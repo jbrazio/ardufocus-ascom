@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{D5207217-61C7-4E94-8097-91DBACE57D2A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{64308775-BD4A-469C-BCAB-3ED830B811AF} = {64308775-BD4A-469C-BCAB-3ED830B811AF}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Setup", "Setup\Setup.csproj", "{D0E9BFCF-5EDD-4ED1-8EE5-33274DCAAA5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{2F0ADE0F-17B5-4447-A32C-0E6D542289F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalServer", "LocalServer\LocalServer.csproj", "{3689A2CB-94C5-4012-A5CF-7E7D1DD27143}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D0E9BFCF-5EDD-4ED1-8EE5-33274DCAAA5E} = {D0E9BFCF-5EDD-4ED1-8EE5-33274DCAAA5E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandController", "HandController\HandController.csproj", "{8E8D406C-1838-4914-867D-AB602D0EAF3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Driver", "Driver\Driver.csproj", "{64308775-BD4A-469C-BCAB-3ED830B811AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5207217-61C7-4E94-8097-91DBACE57D2A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D5207217-61C7-4E94-8097-91DBACE57D2A}.Debug|x86.ActiveCfg = Debug|x86
+		{D5207217-61C7-4E94-8097-91DBACE57D2A}.Debug|x86.Build.0 = Debug|x86
+		{D5207217-61C7-4E94-8097-91DBACE57D2A}.Release|Any CPU.ActiveCfg = Release|x86
+		{D5207217-61C7-4E94-8097-91DBACE57D2A}.Release|x86.ActiveCfg = Release|x86
+		{D5207217-61C7-4E94-8097-91DBACE57D2A}.Release|x86.Build.0 = Release|x86
+		{D0E9BFCF-5EDD-4ED1-8EE5-33274DCAAA5E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D0E9BFCF-5EDD-4ED1-8EE5-33274DCAAA5E}.Debug|x86.ActiveCfg = Debug|x86
+		{D0E9BFCF-5EDD-4ED1-8EE5-33274DCAAA5E}.Debug|x86.Build.0 = Debug|x86
+		{D0E9BFCF-5EDD-4ED1-8EE5-33274DCAAA5E}.Release|Any CPU.ActiveCfg = Release|x86
+		{D0E9BFCF-5EDD-4ED1-8EE5-33274DCAAA5E}.Release|x86.ActiveCfg = Release|x86
+		{D0E9BFCF-5EDD-4ED1-8EE5-33274DCAAA5E}.Release|x86.Build.0 = Release|x86
+		{2F0ADE0F-17B5-4447-A32C-0E6D542289F0}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{2F0ADE0F-17B5-4447-A32C-0E6D542289F0}.Debug|x86.ActiveCfg = Debug|x86
+		{2F0ADE0F-17B5-4447-A32C-0E6D542289F0}.Debug|x86.Build.0 = Debug|x86
+		{2F0ADE0F-17B5-4447-A32C-0E6D542289F0}.Release|Any CPU.ActiveCfg = Release|x86
+		{2F0ADE0F-17B5-4447-A32C-0E6D542289F0}.Release|x86.ActiveCfg = Release|x86
+		{2F0ADE0F-17B5-4447-A32C-0E6D542289F0}.Release|x86.Build.0 = Release|x86
+		{3689A2CB-94C5-4012-A5CF-7E7D1DD27143}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{3689A2CB-94C5-4012-A5CF-7E7D1DD27143}.Debug|x86.ActiveCfg = Debug|x86
+		{3689A2CB-94C5-4012-A5CF-7E7D1DD27143}.Debug|x86.Build.0 = Debug|x86
+		{3689A2CB-94C5-4012-A5CF-7E7D1DD27143}.Release|Any CPU.ActiveCfg = Release|x86
+		{3689A2CB-94C5-4012-A5CF-7E7D1DD27143}.Release|x86.ActiveCfg = Release|x86
+		{3689A2CB-94C5-4012-A5CF-7E7D1DD27143}.Release|x86.Build.0 = Release|x86
+		{8E8D406C-1838-4914-867D-AB602D0EAF3E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{8E8D406C-1838-4914-867D-AB602D0EAF3E}.Debug|x86.ActiveCfg = Debug|x86
+		{8E8D406C-1838-4914-867D-AB602D0EAF3E}.Debug|x86.Build.0 = Debug|x86
+		{8E8D406C-1838-4914-867D-AB602D0EAF3E}.Release|Any CPU.ActiveCfg = Release|x86
+		{8E8D406C-1838-4914-867D-AB602D0EAF3E}.Release|x86.ActiveCfg = Release|x86
+		{8E8D406C-1838-4914-867D-AB602D0EAF3E}.Release|x86.Build.0 = Release|x86
+		{64308775-BD4A-469C-BCAB-3ED830B811AF}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{64308775-BD4A-469C-BCAB-3ED830B811AF}.Debug|x86.ActiveCfg = Debug|x86
+		{64308775-BD4A-469C-BCAB-3ED830B811AF}.Debug|x86.Build.0 = Debug|x86
+		{64308775-BD4A-469C-BCAB-3ED830B811AF}.Release|Any CPU.ActiveCfg = Release|x86
+		{64308775-BD4A-469C-BCAB-3ED830B811AF}.Release|x86.ActiveCfg = Release|x86
+		{64308775-BD4A-469C-BCAB-3ED830B811AF}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFCDB8CC-5C2D-4942-A55E-759B542C119F}
+	EndGlobalSection
+EndGlobal
