@@ -30,7 +30,7 @@ namespace ASCOM.Ardufocus.Driver
     /// <summary>
     /// ASCOM Focuser Driver for Ardufocus.
     /// </summary>
-   [ComVisible(false)] 
+   [ComVisible(true)] 
     public abstract class FocuserBase : ReferenceCountedObjectBase, IFocuserV3
     {
         protected virtual string GET_CURRENT_POS { get { return "GP"; } }

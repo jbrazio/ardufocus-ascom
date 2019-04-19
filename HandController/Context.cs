@@ -36,11 +36,6 @@ namespace ASCOM.Ardufocus
             HandController.Show();
         }
 
-        ~Context()
-        {
-          
-        }
-
         internal static void TriggerUpdateUIState()
         {
             HandController.Invalidate();

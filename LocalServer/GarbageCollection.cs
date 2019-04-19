@@ -24,7 +24,7 @@ namespace ASCOM.Ardufocus
     /// <summary>
     /// Summary description for GarbageCollection.
     /// </summary>
-    class GarbageCollection
+    class GarbageCollection : IDisposable
     {
         protected bool m_bContinueThread;
         protected bool m_GCWatchStopped;
@@ -70,6 +70,15 @@ namespace ASCOM.Ardufocus
         {
             m_EventThreadEnded.WaitOne();
             m_EventThreadEnded.Reset();
+        }
+
+        public void Dispose()
+        {
+            if (m_EventThreadEnded != null)
+            {
+                m_EventThreadEnded.Dispose();
+                m_EventThreadEnded = null;
+            }
         }
     }
 }

@@ -21,7 +21,7 @@ using System.Runtime.InteropServices;
 
 namespace ASCOM.Ardufocus
 {
-    [ComVisible(false)]
+    [ComVisible(true)]
     public class ReferenceCountedObjectBase
     {
         public ReferenceCountedObjectBase()

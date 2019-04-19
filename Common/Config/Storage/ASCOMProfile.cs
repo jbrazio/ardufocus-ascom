@@ -20,7 +20,7 @@ using System;
 
 namespace Common.Config.Storage
 {
-    public class ASCOMProfile : IConfigStorage
+    public class ASCOMProfile : IConfigStorage, IDisposable
     {
         private ASCOM.Utilities.Profile Profile;
         public string ProfileName { get; set; }
@@ -107,5 +107,32 @@ namespace Common.Config.Storage
         {
             Profile.WriteValue(ProfileName, Key, Value, Folder);
         }
+
+        #region IDisposable Support
+        private bool disposedValue = false; // To detect redundant calls
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposedValue)
+            {
+                if (disposing)
+                {
+                    if (Profile != null)
+                    {
+                        Profile.Dispose();
+                        Profile = null;
+                    }
+                }
+
+                disposedValue = true;
+            }
+        }
+
+        // This code added to correctly implement the disposable pattern.
+        public void Dispose()
+        {
+            Dispose(true);
+        }
+        #endregion
     }
 }
