@@ -29,6 +29,6 @@ Here’s how we suggest you go about proposing a change to this project:
 Using the web-based interface to make changes is fine too, and will help you by automatically
 forking the project and prompting to send a pull request too.
 
-[fork]: https://github.com/jbrazio/ardufocus-ascomfork-destination-box
+[fork]: https://github.com/jbrazio/ardufocus-ascom#fork-destination-box
 [branch]: https://github.com/jbrazio/ardufocus-ascom/branches
 [pr]: https://github.com/jbrazio/ardufocus-ascom/pulls
